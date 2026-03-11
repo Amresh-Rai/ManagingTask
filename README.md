@@ -2,27 +2,10 @@
 This is a lightweight Task Management web application built with Python and Flask. This project strictly follows MVC pattern requirements for creating, reading, updating, deleting, and searching task records.
 
 # 2.1.3.2. Explanation of DB Design
+
 ## 2.1.3.2.1. ER Diagram
+![ER Diagram](er-image.png)
 
-The database structure relies on a single `Task` entity reflecting a flat architecture. 
-
-```mermaid
-erDiagram
-    TASK {
-        int id PK
-        string title
-        text description
-        date due_date
-        string status "Pending / In Progress / Completed"
-        text remarks
-        datetime created_on
-        datetime last_updated_on
-        string created_by_name
-        string created_by_id
-        string last_updated_by_name
-        string last_updated_by_id
-    }
-```
 
 ## 2.1.3.2.2. Data Dictionary
 **Table:** `task`
